@@ -7,7 +7,7 @@
 
 - [X] acrescentar um campo estado
 
-- [ ] acrescentar um campo de e-mail
+- [X] acrescentar um campo de e-mail
 
 - [ ] tornar o campo nome e telefone obrigatório
 
