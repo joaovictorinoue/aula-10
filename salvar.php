@@ -15,5 +15,5 @@ fwrite($arquivo, $telefone . "\n");
 
 fclose($arquivo);
 
-header("location:index.html");
+header("location:index.php");
 ?>
