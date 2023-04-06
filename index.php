@@ -46,6 +46,29 @@
         </select><br>
         <button type="submit">Salvar Cliente</button>
     </form>
+
+    <?php
+    $arquivo = fopen("clientes.csv", "r");
+    //$conteudo = fread($arquivo, filesize("clientes.csv"));
+    //echo $conteudo;
+
+    while (!feof($arquivo)) {
+
+        $linha = fgets($arquivo);
+        $registro = explode(",",$linha);
+        if ($registro[0] != ""){
+            echo $registro[0]. " - ";
+            echo $registro[1]. " - ";
+            echo $registro[2]. " - ";
+            echo $registro[3]. " - ";
+            echo $registro[4]. "<br>";
+        }
+    }
+
+    fclose($arquivo);
+    ?>
+
+
     <?php
     $msg = $_GET['mensagem'] ?? "";
 
