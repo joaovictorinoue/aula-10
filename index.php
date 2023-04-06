@@ -46,6 +46,13 @@
         </select><br>
         <button type="submit">Salvar Cliente</button>
     </form>
+    <?php
+    $msg = $_GET['mensagem'] ?? "";
+
+    if ($msg == "salvo") {
+        echo "<script>alert('Cadastro Salvo Com Sucesso!')</script>";
+    }
+    ?>
 </body>
 
 </html>
